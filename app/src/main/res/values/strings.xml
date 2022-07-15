@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">one-piece-wiki</string>
+    <string name="home_crew_text_label">Tripulação</string>
+    <string name="home_season_text_label">Arcos</string>
 </resources>
