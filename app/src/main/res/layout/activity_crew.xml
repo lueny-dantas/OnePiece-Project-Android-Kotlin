@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf ="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="TRIPULAÇÃO"/>
+
+    <ImageView
+        android:id="@+id/imageLuffy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/luffy"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="107dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/luffy" />
+
+    <ImageView
+        android:id="@+id/imageZoro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/zoro"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="371dp"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/zoro" />
+
+    <TextView
+        android:id="@+id/namePersona1"
+        android:layout_width="296dp"
+        android:layout_height="53dp"
+        android:text="@string/persona_name_luffy_label"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="285dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/namePersona2"
+        android:layout_width="294dp"
+        android:layout_height="55dp"
+        android:text="@string/persona_name_zoro_label"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="556dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
