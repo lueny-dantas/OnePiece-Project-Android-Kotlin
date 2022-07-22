@@ -26,6 +26,10 @@
             android:parentActivityName=".activity.HomeActivity">
 
         </activity>
+        <activity android:name=".activity.CharacterDetailsActivity"
+            android:parentActivityName=".activity.CrewActivity">
+
+        </activity>
     </application>
 
 </manifest>

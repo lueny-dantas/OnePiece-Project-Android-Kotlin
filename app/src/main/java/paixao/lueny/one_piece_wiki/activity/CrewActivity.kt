@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.data.CharactersProvider
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.Characters
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.ProductListAdapter
+import paixao.lueny.one_piece_wiki.recyclerview.adapter.CharacterListAdapter
+import paixao.lueny.one_piece_wiki.recyclerview.adapter.Character
 
 class CrewActivity : AppCompatActivity() {
 
@@ -16,18 +16,25 @@ class CrewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crew)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val characters = CharactersProvider.retrieveCharacters()
-        val recyclerView = findViewById<RecyclerView>(R.id.RecyclerView)
+        val recyclerView = findViewById<RecyclerView>(R.id.crewRecyclerView)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = ProductListAdapter(this, characters)
+        recyclerView.adapter = CharacterListAdapter(
+            context = this,
+            characters = characters,
+            onClick = { character ->
+                navigateToCharacterDetailsActivity(character)
+            }
+        )
     }
 
-    private fun navigateToCrewActivity() {
-        val intentOfCrewActivity = Intent(this, CrewActivity::class.java)
-        startActivity(intentOfCrewActivity)
+    private fun navigateToCharacterDetailsActivity(character: Character) {
+        val intentOfCharacterDetailsActivity = Intent(this, CharacterDetailsActivity::class.java)
+        intentOfCharacterDetailsActivity.putExtra("character", character)
+        startActivity(intentOfCharacterDetailsActivity)
+
     }
 }
 

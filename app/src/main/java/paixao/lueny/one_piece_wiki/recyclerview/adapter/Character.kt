@@ -1,11 +1,13 @@
 package paixao.lueny.one_piece_wiki.recyclerview.adapter
 
-data class Characters(
+import java.io.Serializable
+
+data class Character(
     val image: Int,
     val name: String,
     val role: String,
-    val AkumanoMi: String,
+    val akumanoMi: String,
     val powers: String,
     val reward: String
-) {
+): Serializable {
 }

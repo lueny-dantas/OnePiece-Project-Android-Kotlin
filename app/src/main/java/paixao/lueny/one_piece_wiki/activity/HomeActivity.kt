@@ -5,11 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.Characters
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.ProductListAdapter
 
 
 class HomeActivity : AppCompatActivity() {

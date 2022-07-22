@@ -9,18 +9,23 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 
-class ProductListAdapter (
+class CharacterListAdapter (
     private val context: Context,
-    private val characters: List<Characters>
+    private val characters: List<Character>,
+    private val onClick: (Character) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     class ViewHolder(View: View) : RecyclerView.ViewHolder(View)
 
-    private fun RecyclerView.ViewHolder.bind(character: Characters) {
+    private fun RecyclerView.ViewHolder.bind(character: Character) {
         val imageView = itemView.findViewById<ImageView>(R.id.characterImage)
         imageView.setImageResource(character.image)
         val textView = itemView.findViewById<TextView>(R.id.characterName)
         textView.text = character.name
+        val rootView = itemView.findViewById<View>(R.id.itemCharacterView)
+        rootView.setOnClickListener{
+            onClick(character)
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
