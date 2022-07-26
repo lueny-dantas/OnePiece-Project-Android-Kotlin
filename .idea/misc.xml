@@ -8,7 +8,10 @@
         <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/activity_persona.xml" value="0.33" />
+        <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/activity_saga.xml" value="0.25" />
+        <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/activity_saga_details.xml" value="0.25" />
         <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/item_character_list.xml" value="0.18034447821681865" />
+        <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/item_saga_list.xml" value="0.22604166666666667" />
         <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/person_list.xml" value="0.36666666666666664" />
         <entry key="..\:/EstudosAndroid/OnePieceWiki/app/src/main/res/layout/toolbar.xml" value="0.32065217391304346" />
       </map>

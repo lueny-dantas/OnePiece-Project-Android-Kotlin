@@ -1,4 +1,4 @@
-package paixao.lueny.one_piece_wiki.activity
+package paixao.lueny.one_piece_wiki.view.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.data.CharactersProvider
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.CharacterListAdapter
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.Character
+import paixao.lueny.one_piece_wiki.view.adapters.CharacterListAdapter
+import paixao.lueny.one_piece_wiki.domain.models.Character
 
 class CrewActivity : AppCompatActivity() {
 

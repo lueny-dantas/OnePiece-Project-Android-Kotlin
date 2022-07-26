@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">one-piece-wiki</string>
     <string name="home_crew_text_label">Tripulação</string>
-    <string name="home_season_text_label">Arcos</string>
+    <string name="home_saga_text_label">Saga</string>
     <string name="persona_name_luffy_label">Luffy</string>
     <string name="persona_name_zoro_label">Zoro</string>
     <string name="persona_post_text_label">Capitão</string>

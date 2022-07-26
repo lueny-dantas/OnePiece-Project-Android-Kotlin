@@ -1,11 +1,11 @@
-package paixao.lueny.one_piece_wiki.activity
+package paixao.lueny.one_piece_wiki.view.activity
 
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import paixao.lueny.one_piece_wiki.R
-import paixao.lueny.one_piece_wiki.recyclerview.adapter.Character
+import paixao.lueny.one_piece_wiki.domain.models.Character
 
 class CharacterDetailsActivity : AppCompatActivity() {
 

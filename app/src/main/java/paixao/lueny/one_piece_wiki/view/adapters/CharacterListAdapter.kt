@@ -1,4 +1,4 @@
-package paixao.lueny.one_piece_wiki.recyclerview.adapter
+package paixao.lueny.one_piece_wiki.view.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
+import paixao.lueny.one_piece_wiki.domain.models.Character
 
 class CharacterListAdapter (
     private val context: Context,

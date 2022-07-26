@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Onepiecewiki"
         tools:targetApi="31">
         <activity
-            android:name=".activity.HomeActivity"
+            android:name=".view.activity.HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,12 +22,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CrewActivity"
-            android:parentActivityName=".activity.HomeActivity">
+        <activity android:name=".view.activity.CrewActivity"
+            android:parentActivityName=".view.activity.HomeActivity">
 
         </activity>
-        <activity android:name=".activity.CharacterDetailsActivity"
-            android:parentActivityName=".activity.CrewActivity">
+        <activity android:name=".view.activity.CharacterDetailsActivity"
+            android:parentActivityName=".view.activity.CrewActivity">
+
+        </activity>
+        <activity android:name=".view.activity.SagaActivity"
+            android:parentActivityName=".view.activity.HomeActivity">
+
+        </activity>
+        <activity android:name=".view.activity.SagaDetailsActivity"
+            android:parentActivityName=".view.activity.SagaActivity">
 
         </activity>
     </application>

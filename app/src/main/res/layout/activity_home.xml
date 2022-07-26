@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.HomeActivity">
+    tools:context=".view.activity.HomeActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/homeToolbar"
@@ -19,10 +19,10 @@
         app:title="ONE PIECE WIKI"/>
 
     <Button
-        android:id="@+id/homeSeasonButton"
+        android:id="@+id/homeSagaButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/home_season_text_label"
+        android:text="@string/home_saga_text_label"
         android:layout_marginBottom="8dp"
         android:layout_marginHorizontal="16dp"
         app:layout_constraintBottom_toBottomOf="parent"

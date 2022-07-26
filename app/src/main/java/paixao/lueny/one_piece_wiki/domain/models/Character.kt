@@ -1,4 +1,4 @@
-package paixao.lueny.one_piece_wiki.recyclerview.adapter
+package paixao.lueny.one_piece_wiki.domain.models
 
 import java.io.Serializable
 
