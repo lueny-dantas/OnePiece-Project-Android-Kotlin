@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.domain.models.Character
 
-class CharacterListAdapter (
+class CharactersAdapter (
     private val context: Context,
     private val characters: List<Character>,
     private val onClick: (Character) -> Unit
@@ -20,10 +20,11 @@ class CharacterListAdapter (
 
     private fun RecyclerView.ViewHolder.bind(character: Character) {
         val imageView = itemView.findViewById<ImageView>(R.id.characterImage)
-        imageView.setImageResource(character.image)
         val textView = itemView.findViewById<TextView>(R.id.characterName)
-        textView.text = character.name
         val rootView = itemView.findViewById<View>(R.id.itemCharacterView)
+
+        imageView.setImageResource(character.image)
+        textView.text = character.name
         rootView.setOnClickListener{
             onClick(character)
         }

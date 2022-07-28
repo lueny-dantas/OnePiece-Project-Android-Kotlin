@@ -16,16 +16,25 @@ class CharacterDetailsActivity : AppCompatActivity() {
         val character = intent.getSerializableExtra("character") as? Character
         if (character != null) {
             val imageView = findViewById<ImageView>(R.id.characterDetailsImage)
-            imageView.setImageResource(character.image)
             val nameView = findViewById<TextView>(R.id.characterDetailsName)
-            nameView.text = character.name
+            val roleTitle = findViewById<TextView>(R.id.characterDetailsRoleTitle)
             val roleView = findViewById<TextView>(R.id.characterDetailsRole)
-            roleView.text = character.role
+            val rewardTitleView= findViewById<TextView>(R.id.characterDetailsRewardTitle)
             val rewardView= findViewById<TextView>(R.id.characterDetailsReward)
-            rewardView.text = character.reward
+            val akumanoMiTitleView = findViewById<TextView>(R.id.characterDetailsAkumanoMiTitle)
             val akumanoMiView = findViewById<TextView>(R.id.characterDetailsAkumanoMi)
-            akumanoMiView.text = character.akumanoMi
+            val powersTitleView = findViewById<TextView>(R.id.characterDetailsPowersTitle)
             val powersView = findViewById<TextView>(R.id.characterDetailsPowers)
+
+            imageView.setImageResource(character.image)
+            nameView.text = character.name
+            roleTitle.text = character.roleTitle
+            roleView.text = character.role
+            rewardTitleView.text = character.rewardTitle
+            rewardView.text = character.reward
+            akumanoMiTitleView.text = character.akumanoMiTilte
+            akumanoMiView.text = character.akumanoMi
+            powersTitleView.text = character.powersTitle
             powersView.text = character.powers
 
         }

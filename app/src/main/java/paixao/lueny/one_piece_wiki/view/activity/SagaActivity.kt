@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.data.SagasProvider
 import paixao.lueny.one_piece_wiki.domain.models.Saga
-import paixao.lueny.one_piece_wiki.view.adapters.SagaListAdapter
+import paixao.lueny.one_piece_wiki.view.adapters.SagasAdapter
 
 class SagaActivity : AppCompatActivity() {
 
@@ -21,7 +21,7 @@ class SagaActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.sagaRecyclerView)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = SagaListAdapter(
+        recyclerView.adapter = SagasAdapter(
             context = this,
             sagas = sagas,
             onClick = { saga ->

@@ -11,7 +11,7 @@ import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.domain.models.Character
 import paixao.lueny.one_piece_wiki.domain.models.Saga
 
-class SagaListAdapter (
+class SagasAdapter (
     private val context: Context,
     private val sagas: List<Saga>,
     private val onClick: (Saga) -> Unit

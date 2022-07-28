@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.data.CharactersProvider
-import paixao.lueny.one_piece_wiki.view.adapters.CharacterListAdapter
+import paixao.lueny.one_piece_wiki.view.adapters.CharactersAdapter
 import paixao.lueny.one_piece_wiki.domain.models.Character
 
 class CrewActivity : AppCompatActivity() {
@@ -21,7 +21,7 @@ class CrewActivity : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.crewRecyclerView)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = CharacterListAdapter(
+        recyclerView.adapter = CharactersAdapter(
             context = this,
             characters = characters,
             onClick = { character ->

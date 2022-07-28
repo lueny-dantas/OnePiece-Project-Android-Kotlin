@@ -7,7 +7,9 @@ data class Saga(
     val image: Int,
     val beginningEpisode: String,
     val endEpisode: String,
+    val titleResume: String,
     val resume: String,
+    val titleArcs: String,
     val arcs: List<Arc>,
 ): Serializable {
 }
