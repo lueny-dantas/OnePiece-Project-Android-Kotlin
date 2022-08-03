@@ -11,5 +11,4 @@ data class Saga(
     val resume: String,
     val titleArcs: String,
     val arcs: List<Arc>,
-): Serializable {
-}
+): Serializable

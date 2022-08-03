@@ -4,8 +4,10 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.domain.models.Character
+import paixao.lueny.one_piece_wiki.view.NavigationParams
 
 class CharacterDetailsActivity : AppCompatActivity() {
 
@@ -13,8 +15,10 @@ class CharacterDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_details)
 
-        val character = intent.getSerializableExtra("character") as? Character
+        val character = intent.getSerializableExtra(NavigationParams.CHARACTER_PARAMS) as? Character
         if (character != null) {
+            setupToolbar(character.name)
+
             val imageView = findViewById<ImageView>(R.id.characterDetailsImage)
             val nameView = findViewById<TextView>(R.id.characterDetailsName)
             val roleTitle = findViewById<TextView>(R.id.characterDetailsRoleTitle)
@@ -27,7 +31,6 @@ class CharacterDetailsActivity : AppCompatActivity() {
             val powersView = findViewById<TextView>(R.id.characterDetailsPowers)
 
             imageView.setImageResource(character.image)
-            nameView.text = character.name
             roleTitle.text = character.roleTitle
             roleView.text = character.role
             rewardTitleView.text = character.rewardTitle
@@ -38,6 +41,15 @@ class CharacterDetailsActivity : AppCompatActivity() {
             powersView.text = character.powers
 
         }
+    }
+    private fun setupToolbar(characterName: String) {
+        val toolbar = findViewById<Toolbar>(R.id.characterDetailsToolbar)
+
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+
+        }
+        toolbar.title = characterName
     }
 }
 

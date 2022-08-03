@@ -8,7 +8,7 @@ object SagasProvider {
     fun retrieveSagas() =
         listOf(
             Saga(
-                "Saga East Blue",
+                "East Blue",
                 image = R.drawable.saga1,
                 "Episódio Inicial: 01",
                 "Episódio Final: 61",
@@ -28,7 +28,7 @@ object SagasProvider {
                 ),
             ),
             Saga(
-                "Saga Alabasta",
+                "Alabasta",
                 image = R.drawable.alabasta,
                 "Episódio Inicial: 62",
                 "Episódio Final: 135",
@@ -47,7 +47,7 @@ object SagasProvider {
                 )
             ),
             Saga(
-                "Saga Skypiea",
+                "Skypiea",
                 image = R.drawable.saga3,
                 "Episódio Inicial: 136",
                 "Episódio Final: 206 ",
@@ -64,7 +64,7 @@ object SagasProvider {
                 )
             ),
             Saga(
-                "Saga Water 7",
+                "Water 7",
                 image = R.drawable.saga4,
                 "Episódio Inicial:207",
                 "Episódio Final: 325 ",
@@ -81,7 +81,7 @@ object SagasProvider {
                 )
             ),
             Saga(
-                "Saga Thriller Bark",
+                "Thriller Bark",
                 image = R.drawable.saga5,
                 "Episódio Inicial: 326",
                 "Episódio Final: 384 ",
@@ -95,7 +95,7 @@ object SagasProvider {
                 )
             ),
             Saga(
-                "Saga Guerra de Marineford",
+                "Guerra de Marineford",
                 image = R.drawable.saga6,
                 "Episódio Inicial: 385",
                 "Episódio Final:516",
@@ -113,7 +113,7 @@ object SagasProvider {
                 )
             ),
             Saga(
-                "Saga Ilha dos Homens-Peixe",
+                "Ilha dos Homens-Peixe",
                 image = R.drawable.saga7,
                 "Episódio Inicial: 517",
                 "Episódio Final: 574 ",
@@ -126,7 +126,7 @@ object SagasProvider {
                 )
             ),
             Saga(
-                "Saga Aliança Pirata",
+                "Aliança Pirata",
                 image = R.drawable.saga8,
                 "Episódio Inicial: 575",
                 "Episódio Final: 750 ",
@@ -144,7 +144,7 @@ object SagasProvider {
                 ),
 
             Saga(
-                "Saga Yonkou",
+                "Yonkou",
                 image = R.drawable.saga9,
                 "Episódio Inicial: 751",
                 "Episódio Final: 1025 ",

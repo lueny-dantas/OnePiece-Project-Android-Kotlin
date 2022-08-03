@@ -4,19 +4,26 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
 import paixao.lueny.one_piece_wiki.R
 import paixao.lueny.one_piece_wiki.domain.models.Saga
+import paixao.lueny.one_piece_wiki.view.NavigationParams
 import paixao.lueny.one_piece_wiki.view.adapters.ArcsAdapter
 
-class SagaDetailsActivity: AppCompatActivity() {
+class SagaDetailsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_saga_details)
 
-        val saga = intent.getSerializableExtra("saga") as? Saga
+
+
+        val saga = intent.getSerializableExtra(NavigationParams.SAGA_PARAMS) as? Saga
+
         if (saga != null) {
+            setupToolbar(saga.name)
+
             val imageView = findViewById<ImageView>(R.id.sagaDetailsImage)
             val nameView = findViewById<TextView>(R.id.sagaDetailsName)
             val beginningEpisodeView = findViewById<TextView>(R.id.sagaDetailsBeginningEpisode)
@@ -34,7 +41,15 @@ class SagaDetailsActivity: AppCompatActivity() {
             resumeView.text = saga.resume
             arcTitleView.text = saga.titleArcs
             arcsView.adapter = ArcsAdapter(this, saga.arcs)
-
         }
+    }
+    private fun setupToolbar(sagaName: String) {
+        val toolbar = findViewById<Toolbar>(R.id.sagaDetailsToolbar)
+
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
+
+        toolbar.title = sagaName
     }
 }
