@@ -20,20 +20,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_back"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="PERSONAGEM" />
+            app:title="Nome do Tripulante" />
 
         <ImageView
             android:id="@+id/characterDetailsImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="1035dp"
+            android:layout_height="233dp"
             android:contentDescription="@string/luffy1"
-            app:srcCompat="@drawable/luffy"
-            android:layout_marginTop="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/characterDetailsToolbar"
-            />
+            app:srcCompat="@drawable/luffy" />
+
 
         <TextView
             android:id="@+id/characterDetailsName"
@@ -42,13 +42,12 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
             android:layout_marginTop="16dp"
-            tools:text="Name"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="25sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/characterDetailsImage"/>
+            app:layout_constraintTop_toBottomOf="@id/characterDetailsImage" />
 
         <TextView
             android:id="@+id/characterDetailsRoleTitle"
@@ -57,8 +56,8 @@
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
             android:textColor="@color/black"
-            android:textStyle="bold"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/characterDetailsName"
@@ -83,13 +82,13 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            tools:text="Reward Title"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/characterDetailsRole"/>
+            app:layout_constraintTop_toBottomOf="@id/characterDetailsRole"
+            tools:text="Reward Title" />
 
         <TextView
             android:id="@+id/characterDetailsReward"
@@ -97,12 +96,12 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            tools:text="Reward"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/characterDetailsRewardTitle"/>
+            app:layout_constraintTop_toBottomOf="@id/characterDetailsRewardTitle"
+            tools:text="Reward" />
 
         <TextView
             android:id="@+id/characterDetailsAkumanoMiTitle"
@@ -110,13 +109,13 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            tools:text="AkumanoMi Title"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/characterDetailsReward" />
+            app:layout_constraintTop_toBottomOf="@+id/characterDetailsReward"
+            tools:text="AkumanoMi Title" />
 
         <TextView
             android:id="@+id/characterDetailsAkumanoMi"
@@ -124,12 +123,12 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            tools:text="AkumanoMi"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/characterDetailsAkumanoMiTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/characterDetailsAkumanoMiTitle"
+            tools:text="AkumanoMi" />
 
         <TextView
             android:id="@+id/characterDetailsPowersTitle"
@@ -137,13 +136,13 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            tools:text="Powers Title"
-            android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/characterDetailsAkumanoMi" />
+            app:layout_constraintTop_toBottomOf="@+id/characterDetailsAkumanoMi"
+            tools:text="Powers Title" />
 
         <TextView
             android:id="@+id/characterDetailsPowers"
@@ -151,12 +150,19 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:layout_marginVertical="8dp"
-            tools:text="Powers"
             android:textColor="@color/black"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/characterDetailsPowersTitle" />
+            app:layout_constraintTop_toBottomOf="@+id/characterDetailsPowersTitle"
+            tools:text="Powers" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="0dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
