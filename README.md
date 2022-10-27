@@ -6,5 +6,5 @@ Esse projeto consome dados próprios retirado da internet no qual é feita a apr
  - Android 
  
  # Ilustração
- https://user-images.githubusercontent.com/98789294/198178917-e3f38807-8622-406d-9b26-3860a6a1ae79.mp4
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/98789294/198398070-8cf6d299-9524-4ee4-919e-f6371f8e8d1e.gif)
