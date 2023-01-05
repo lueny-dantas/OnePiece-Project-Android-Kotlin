@@ -3,7 +3,7 @@ App que permite verificar personagens principais do anime One Piece e suas habil
 
 # 🔨 Funcionalidades do projeto
 O App possui a funcionalidade de listagem de personagens, suas habilidades, recompensas e os arcos no qual está divido o anime e seus respectivos episódios.
-Esse projeto consome dados próprios retirado da internet e está divido em tripulação e arcos podendo ser feita a seleção da apresentação dos personagens principais com suas características ou os arcos que estão presentes e seus episódios.
+Esse projeto consome dados próprios retirado da internet e está divido em tripulação e saga, podendo ser feita a seleção da apresentação dos personagens principais com suas características ou  as sagas que estão presentes e seus episódios.
  
 # ✨ Ilustração
 
