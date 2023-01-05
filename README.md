@@ -22,7 +22,7 @@ Esse projeto consome dados próprios retirado da internet e está divido em trip
 * ConstraintLayout: ViewGroup para implementar layouts;
 
 # 📂Acesso ao projeto
-Você pode acessar o código fonte do projeto inicial (https://github.com/lueny-dantas/) ou baixá-lo.
+Você pode acessar o código fonte do projeto inicial (https://github.com/lueny-dantas/OnePieceWiki/) ou baixá-lo.
 
 
 # 🛠️ Abrir e rodar o projeto
