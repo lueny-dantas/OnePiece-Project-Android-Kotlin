@@ -1,5 +1,5 @@
 # OnePieceWiki
-App que permite verificar personagens principais do anime One Piece e suas habilidades, além de todos os arcos presente nas temporadas e os episódios referente a cada arco.
+App que permite verificar personagens principais do anime OnePiece e suas habilidades, além de todos os arcos presente nas temporadas e os episódios referente a cada arco.
 
 # 🔨 Funcionalidades do projeto
 O App possui a funcionalidade de listagem de personagens, suas habilidades, recompensas e os arcos no qual está divido o anime e seus respectivos episódios.
