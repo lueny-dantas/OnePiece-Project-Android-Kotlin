@@ -1,9 +1,13 @@
 # OnePieceWiki
-App que permite verificar personagens principais do anime OnePiece e suas habilidades, além de todos os arcos presente nas temporadas e os episódios referente a cada arco.
+App que permite verificar personagens principais do anime OnePiece e suas habilidades, além de todos os arcos presentes nas temporadas e os episódios referentes a cada arco.
 
 # 🔨 Funcionalidades do projeto
-O App possui a funcionalidade de listagem de personagens, suas habilidades, recompensas e os arcos no qual está divido o anime e seus respectivos episódios.
-Esse projeto consome dados próprios retirado da internet e está divido em tripulação e saga, podendo ser feita a seleção da apresentação dos personagens principais com suas características ou  as sagas que estão presentes e seus episódios.
+- Listagem de principais personagens da série.
+- Tela de detalhes de cada personagem com informação de suas habilidades e recompensas.
+- Listagem das sagas da série. 
+- Tela de detalhes da saga, contendo resumo e informação dos arcos no qual está divido a saga e seus respectivos episódios.
+
+[obs]: Os dados utilizados nesse projeto foram retirados da internet.
  
 # ✨ Ilustração
 
@@ -12,14 +16,12 @@ Esse projeto consome dados próprios retirado da internet e está divido em trip
 # ✔️ Técnicas e Tecnologias utilizadas:
 
 * Kotlin;
-* Activities;
-* Layout para Activities:TextView, RecyclerView, ConstraintLayout, EditTex, Button;
-* Binding View;
-* Listener para cliques;
-* AndroidX: AppCompactActivity;
-* Material;
-* RecyclerView: listagem das personagens e arcos;
-* ConstraintLayout: ViewGroup para implementar layouts;
+* Activity;
+* Layouts utilizados: ConstraintLayout, RecyclerView, TextView, Button;
+* View Binding;
+* Material Design;
+* RecyclerView + Custom adapter para listagem das personagens e arcos;
+
 
 # 📂Acesso ao projeto
 Você pode acessar o código fonte do projeto inicial [aqui](https://github.com/lueny-dantas/OnePieceWiki/) ou baixá-lo.
